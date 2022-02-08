@@ -8,8 +8,14 @@ const result = {
     result: ''
   };
 let compare = coinFlip()
+if (myArgs[0] == null){
+  console.log("Error: no input.")
+  console.log("Usage: node guess-flip --call=[heads|tails]")
+}
+else{
 let call = myArgs[0].slice(-5)
 result.call = call
 result.flip = compare
 call == compare ? result.result = 'win' : result.result = 'lose'
 console.log(result)
+}
