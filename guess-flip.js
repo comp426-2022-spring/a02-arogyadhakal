@@ -8,7 +8,7 @@ const result = {
     result: ''
   };
 let compare = coinFlip()
-if (myArgs[0] == null){
+if (myArgs[0] == null || (myArgs[0].slice(-5) != 'heads' && myArgs[0].slice(-5) != 'tails')){
   console.log("Error: no input.")
   console.log("Usage: node guess-flip --call=[heads|tails]")
 }

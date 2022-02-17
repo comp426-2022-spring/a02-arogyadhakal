@@ -2,5 +2,4 @@
 import { coinFlip } from "./modules/coin.mjs";
 
 // Call the coinFlip function and put the return into STDOUT
-let output = coinFlip()
-console.log(output)
+console.log(coinFlip())
